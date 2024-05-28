@@ -1,4 +1,4 @@
-import ListData from '@/app/components/(Home)/ListData'
+import ListData from '@/app/components/(Home)/employee/ListData'
 import React from 'react'
 
 const page = () => {

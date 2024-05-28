@@ -6,10 +6,10 @@ import { getServerSession } from "next-auth";
 import authOptions from "../auth/[...nextauth]/option";
 
 export const POST = async (req, res) => {
-    const session =await getServerSession(authOptions)
-    if(session.role == "employee"){
-        return NextResponse.json({success : false})
-    }
+    // const session =await getServerSession(authOptions)
+    // if(session.role == "employee"){
+    //     return NextResponse.json({success : false})
+    // }
     const data = await req.json();
     console.log(data)
     await connectDB()

@@ -33,13 +33,13 @@ const items = [
   },
   {
     key: "2",
-    icon: <AppstoreOutlined />,
-    label: "Leave",
+    icon: <SettingOutlined />,
+    label: "Teams",
   },
   {
     key: "3",
-    icon: <SettingOutlined />,
-    label: "Teams",
+    icon: <AppstoreOutlined />,
+    label: "Leave",
   },
   {
     key: "4",
@@ -121,10 +121,8 @@ const App = () => {
           router.push("/home/employee/manage");
         } else if (e.key == "12") {
           router.push("/home/employee/add");
-        } else if (e.key == "11") {
-          router.push("/home/employee/manage");
-        } else if (e.key == "11") {
-          router.push("/home/employee/manage");
+        } else if (e.key == "2") {
+          router.push("/home/team");
         } else if (e.key == "11") {
           router.push("/home/employee/manage");
         }
